@@ -11,7 +11,6 @@ Uninsured <- readxl::read_xlsx("UninsuredState.xlsx")
 
 ```{r}
 head(Uninsured)
-Uninsured$`% High Income` = Uninsured$`% HIU Income 400% FPL` /  (Uninsured$`% HIU Income 100-138% FPL` + Uninsured$`% HIU Income 139-249% FPL` + Uninsured$`% HIU Income 250-400% FPL` + Uninsured$`% HIU Income < 100% FPL` + Uninsured$`% HIU Income 400% FPL`)
 ```
 
 ```{r}
@@ -19,7 +18,7 @@ mod1 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% College Grad`)
 summary(mod1)
 mod2 = lm(Uninsured$`Percent Uninsured`~ Uninsured$`% Child in Family`)
 summary(mod2)
-mod3 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
+mod3 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% HIU Income 400% FPL`)
 summary(mod3)
 ```
 
@@ -35,7 +34,7 @@ abline(mod2)
 
 
 ```{r}
-plot(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
+plot(Uninsured$`Percent Uninsured`~Uninsured$`% HIU Income 400% FPL`)
 abline(mod3)
 ```
 
