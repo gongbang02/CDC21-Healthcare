@@ -15,24 +15,29 @@ Uninsured$`% High Income` = Uninsured$`% HIU Income 400% FPL` /  (Uninsured$`% H
 ```
 
 ```{r}
-mod1 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% Married`)
-mod2 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% College Grad`)
-mod3 = lm(Uninsured$`Percent Uninsured`~ Uninsured$`% Child in Family`)
+mod1 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% College Grad`)
+summary(mod1)
+mod2 = lm(Uninsured$`Percent Uninsured`~ Uninsured$`% Child in Family`)
+summary(mod2)
+mod3 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
+summary(mod3)
 ```
 
 ```{r}
-mod4 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
-summary(mod3)
-plot(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
-abline(mod3)
+plot(Uninsured$`Percent Uninsured`~Uninsured$`% College Grad`)
+abline(mod1)
 ```
 
 ```{r}
 plot(Uninsured$`Percent Uninsured`~ Uninsured$`% Child in Family`)
-abline(mod3)
+abline(mod2)
 ```
 
 
+```{r}
+plot(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
+abline(mod3)
+```
 
 
 
