@@ -22,7 +22,9 @@ mod3 = lm(Uninsured$`Percent Uninsured`~ Uninsured$`% Child in Family`)
 
 ```{r}
 mod4 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
-summary(mod4)
+summary(mod3)
+plot(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
+abline(mod3)
 ```
 
 
