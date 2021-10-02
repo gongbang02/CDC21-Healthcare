@@ -9,6 +9,10 @@ library(car)
 Uninsured <- readxl::read_xlsx("UninsuredState.xlsx")
 ```
 
+```{r}
+head(Uninsured)
+```
+
 
 ```{r}
 mod1 = lm(Uninsured$`Percent Uninsured`~Uninsured$`% College Grad`)
