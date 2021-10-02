@@ -27,6 +27,10 @@ plot(Uninsured$`Percent Uninsured`~Uninsured$`% High Income`)
 abline(mod3)
 ```
 
+```{r}
+plot(Uninsured$`Percent Uninsured`~ Uninsured$`% Child in Family`)
+abline(mod3)
+```
 
 
 
