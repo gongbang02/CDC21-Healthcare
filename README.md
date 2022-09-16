@@ -1,5 +1,7 @@
 # Healthcare Track Data Analysis
 
+Presentation available at: https://devpost.com/software/healthcare-data-analysis
+
 Inspiration: The percentage of uninsured population differs significantly by states.
 
 What it does: Our project makes two hypotheses and found that college education and population wealth are two factors affecting uninsured rate.
