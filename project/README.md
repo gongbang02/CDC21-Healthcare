@@ -1,4 +1,4 @@
-We mainly used R to analyze the data in UninsuredState.xlsx and used Tableau to help visualize our result. Feel free to see our slides for the project presentation. Our presentation video is also available at ([link]())
+We mainly used R to analyze the data in UninsuredState.xlsx and used Tableau to help visualize our result. Feel free to see our slides for the project presentation. Our presentation video is available at ([link](https://devpost.com/software/healthcare-data-analysis))
 
 Dataset used:
 
